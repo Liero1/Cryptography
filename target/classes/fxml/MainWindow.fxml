@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane alignment="TOP_LEFT" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cryptography.MainWindow">
+
+    <TextField fx:id="messageField" promptText="Wiadomość">
+      <StackPane.margin>
+         <Insets left="20.0" right="20.0" top="40.0" />
+      </StackPane.margin></TextField>
+    <TextField fx:id="keyField" promptText="Klucz">
+      <StackPane.margin>
+         <Insets left="20.0" right="20.0" top="100.0" />
+      </StackPane.margin></TextField>
+    <ChoiceBox fx:id="action" prefHeight="28.0" prefWidth="161.0">
+      <StackPane.margin>
+         <Insets left="20.0" top="140.0" />
+      </StackPane.margin></ChoiceBox>
+    <TextField fx:id="result" promptText="Wynik">
+      <StackPane.margin>
+         <Insets left="20.0" right="20.0" top="220.0" />
+      </StackPane.margin></TextField>
+   <ChoiceBox fx:id="algorithm" prefHeight="28.0" prefWidth="275.0">
+      <StackPane.margin>
+         <Insets left="200.0" top="140.0" />
+      </StackPane.margin>
+   </ChoiceBox>
+    <Button fx:id="performAction" onAction="#performAction" text="OK">
+      <StackPane.margin>
+         <Insets left="20.0" top="180.0" />
+      </StackPane.margin></Button>
+   <Label text="Wiadomość">
+      <StackPane.margin>
+         <Insets left="20.0" top="20.0" />
+      </StackPane.margin>
+   </Label>
+   <Label fx:id="keyLabel" text="Klucz">
+      <StackPane.margin>
+         <Insets left="20.0" top="80.0" />
+      </StackPane.margin>
+   </Label>
+</StackPane>
